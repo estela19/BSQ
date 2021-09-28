@@ -6,14 +6,19 @@
 
 int	run(const char *path)
 {
-	t_area	area;
+	t_cset	cset;
 	//todo
 	char	**map;
 
-	if (load_map(path, map) == FAIL)
+	if (load_map(path, map, &cset) == FAIL)
+	{
+		if (map != '\0')
+			free(map);
 		return (FAIL);
-	find_square(map, area);
-	print_map(map, area);
+	}
+	find_square(map, cset);
+	print_map(map);
+	free(map);
 	return (SUCCESS);
 }
 

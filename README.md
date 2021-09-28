@@ -40,10 +40,10 @@ void print_map(char **map);
 # define TRUE 1  
 # define FALSE 0  
 
-typedef struct s_area{
-	int	x;
-	int	y;
-	int	len;
+typedef struct s_cset{
+	char empty;
+	char obstacle;
+	char area;
 }t_area;
 
 int		ft_strlen(char *str);
