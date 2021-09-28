@@ -54,7 +54,7 @@ void	ft_strcpy(char *dest, char *src);
   직접적인 file io를 담당하는 부분  
 
   ```
-	int		read_file(const char *path, char *buff);
+	int	read_file(const char *path, char *buff);
 	void	print(char *str);
 	void	print_char(char *c);
   ```
