@@ -15,8 +15,8 @@ void print_error(void);
 map에 대한 연산을 수행.  
 **load_map**, **find_square**, **print_map**, **utility** 로 구성되어 있다. 
 ```
-int load_map(const char *path, char **map, t_cset *cset);
-void find_square(char **map, t_cset *cset);
+int load_map(const char *path, char **map, t_map *mapinfo);
+void find_square(char **map, t_map *mapinfo);
 void print_map(char **map);
 ```  
   

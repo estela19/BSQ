@@ -9,11 +9,13 @@
 # define TRUE 1
 # define FALSE 0
 
-typedef struct s_cset{
+typedef struct s_map{
+	int		height;
+	int		width;
 	char	empty;
 	char	obstacle;
 	char	area;
-}t_cset;
+}t_map;
 
 int		ft_strlen(char *str);
 void	ft_strcpy(char *dest, char *src);

@@ -3,6 +3,6 @@
 
 #include "utility.h"
 
-int	load_map(cosnt char *path, char **map, t_cset *cset);
+int	load_map(cosnt char *path, char **map, t_map *mapinfo);
 
 #endif
