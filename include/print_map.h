@@ -3,6 +3,6 @@
 
 # include "utility.h"
 
-void	print_map(char **map, t_area area);
+void	print_map(char **map);
 
 #endif

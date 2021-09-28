@@ -15,14 +15,14 @@ void print_error(void);
 map에 대한 연산을 수행.  
 **load_map**, **find_square**, **print_map**, **utility** 로 구성되어 있다. 
 ```
-int load_map(const char *path, char **map)
-void find_square(char **map, struct *locate)
-void print_map(char **map, t_area area);
+int load_map(const char *path, char **map, t_cset *cset);
+void find_square(char **map, t_cset *cset);
+void print_map(char **map);
 ```  
   
   
   * load_map  
-   인자로 받은 주소파일을 읽고 유효한 파일인지 확인 후 유효할경우 map에 넣어준다.  
+   인자로 받은 주소파일을 읽고 유효한 파일인지 확인 후 유효할경우 map에 넣어준다. 장애물, 빈공간, 최대영억에 대한 character를 파싱해 cset에 넣어준다.  
      
  * find_square  
    핵심 logic 함수. map에서 최대 사각형 공간을 구하고, 그 공간의 좌상단의 좌표와 변의 길이를 locate에 담아준다.  
