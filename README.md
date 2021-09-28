@@ -4,7 +4,6 @@
 **api** <-> **map_manager** <-> **file_io**  
 
 ## api layer  
---------
 하나의 map에 대해 최대공간을 구한다.  
 
 ``` 
@@ -13,7 +12,6 @@ void print_error(void);
 ```  
 
 ## map_manager layer  
------
 map에 대한 연산을 수행.  
 **load_map**, **find_square**, **print_map**, **utility** 로 구성되어 있다. 
 ```
@@ -53,7 +51,6 @@ void	ft_strcpy(char *dest, char *src);
 ```
   
  ## file layer  
- ----
   직접적인 file io를 담당하는 부분  
 
   ```
