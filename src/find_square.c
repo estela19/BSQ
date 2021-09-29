@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   find_square.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kipark <kipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: sooykim <sooykim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 18:00:24 by kipark            #+#    #+#             */
-/*   Updated: 2021/09/28 22:58:47 by kipark           ###   ########.fr       */
+/*   Updated: 2021/09/29 16:08:45 by sooykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ struct t_board_values	play_dp(int **dp, t_board_values bv)
 	return (bv);
 }
 
-void	**solution(char **in_board, int **dp, t_board_values bv, t_map *mapinfo)
+void	solution(char **in_board, int **dp, t_board_values bv, t_map *mapinfo)
 {
 	int	i;
 	int	j;

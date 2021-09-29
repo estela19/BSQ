@@ -6,27 +6,28 @@
 
 int	run(const char *path)
 {
-	t_cset	cset;
-	//todo
+	t_map	mapinfo;
 	char	**map;
 
-	if (load_map(path, map, &cset) == FAIL)
+	map = NULL;
+	if (load_map(path, map, &mapinfo) == FAIL)
 	{
-		if (map != '\0')
+		if (map != NULL)
 			free(map);
 		return (FAIL);
 	}
-	find_square(map, cset);
+	find_square(map, &mapinfo);
 	print_map(map);
-	free(map);
+	free(map);//TODO
 	return (SUCCESS);
 }
 
 void	print_error(void)
 {
 	int			i;
-	const char *msg = "map error\n";
+	const char	*msg = "map error\n";
 
+	i = 0;
 	while (msg[i] != '\0')
 	{
 		write(1, &msg[i], 1);

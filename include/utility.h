@@ -2,6 +2,7 @@
 # define UTILITY_H
 
 # include <unistd.h>
+# include <stdlib.h>
 
 # define SUCCESS 0
 # define FAIL -1
